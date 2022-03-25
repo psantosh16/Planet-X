@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planet.css">
+    <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon">
+    <title>Earth</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="flex">
+        <div id="planet" onclick="playAudio()">
+            <p>EARTH</p>
+            <img src="Img/earth.png" alt="earth" 
+                style="width: 40%; height: auto;position: relative; background-color: transparent; cursor: pointer;">
+        </div>
+        <div class="p">
+            <p>At Day| <br> 28°C</p>
+            <p>At Night| <br> 16°C</p>
+        </div>
+
+        <div id="cards">
+            <div class="memo">
+                <h4>Weight</h4>
+                <p>5.972 × 10^24 kg <br>
+                    <br> Earth is the third planet from the Sun and the only astronomical object known to harbor life.
+                    <br> <br> About 71% of Earth's surface is made up of the ocean, dwarfing Earth's polar ice, lakes
+                    and
+                    rivers.
+                </p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Age</h4>
+                <p>Earth is estimated to be 4.54 billion years old, plus or minus about 50 million years. <br> <br>
+                    Scientists
+                    have scoured the Earth searching for the oldest rocks to radiometrically date. In northwestern
+                    Canada, they discovered rocks about 4.03 billion years old.</p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Distance</h4>
+                <p>Scientists sometimes call our region of space the "Goldilocks Zone" because it appears to be just
+                    right for life. <br> <br>
+                    As noted earlier, Earth's average distance to the Sun is about 93 million miles (150
+                    million kilometers) from the Sun. That's 1 AU.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color:rgb(27, 26, 26);text-align: center;
+padding: 0px; margin: 20px 0 0 0 ;">
+        <footer>
+            <p>Designed by <a href="https://github.com/psantosh16" style="text-decoration: none; color: bisque;">Santosh
+                    ❤️</a></p>
+
+            <img id="pauseButton"  onclick="pauseAudio()" src="Img/Pause.svg"  alt="Pause Button">
+        </footer>
+    </div>
+
+
+    <audio src="Aud/earth music.m4a" loop id="myAudio1"></audio>
+
+    <script src="main.js"></script>
+    <script>
+
+        var music = document.getElementById("myAudio1");
+
+
+        function playAudio() {
+            music.play();
+            music.volume = 0.7;
+            console.log('You played song');
+        }
+        function pauseAudio() {
+            music.pause();
+            music.volume = 0.0;
+            console.log('You paused song');
+        }
+    </script>
+
+</body>
+
+</html>

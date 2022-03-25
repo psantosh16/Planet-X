@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(238,209,137);
+    background: linear-gradient(90deg, rgba(238,209,137,1) 0%, rgba(166,165,226,1) 48%, rgba(238,209,137,1) 100%);
+}
+
+
+/**************** Navbar ****************/
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: column;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 8px 40px;
+    margin: 20px;
+}
+a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/**************** Toppage ****************/
+#toppage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(126, 72, 158);
+    margin: 100px 0 100px 0;
+}
+#toppage h1{
+    font-family: 'Petit Formal Script', cursive;
+    text-align: center;
+    margin: 20px;
+    font-size: 60px;
+}
+#toppage p{
+    margin: 10px;
+    color: #000;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: capitalize;
+}
+
+/**************** Container ****************/
+#container{
+    display: flex;
+    width: 100%;
+    margin: 100px 0;
+    justify-content: space-evenly;
+}
+.img{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 45%;
+    text-align: center;
+    font-size: 30px;
+
+}
+.img img{
+    width: 50%;
+    height: 110%;
+    padding: 20px;
+    
+}
+.text p{
+    color: rgb(85, 84, 84);
+    font-size: 25px;
+    text-align: start;
+    margin: 20px 0;
+
+}
+.img img:hover{
+    transform: scale(1.1);
+}
+
+/**************** Projects ****************/
+
+#projects{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+
+}
+.item img{
+    width: 80%;
+    height: 100%;
+    margin: 0 0 10px 0;
+    border-radius: 8px;
+}
+.item p{
+ margin: 10px 0;
+}
+.item p a{
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item p a:hover{
+    color: white;
+    border: 1px solid rgb(58, 57, 57);
+}
+
+
+
+
+/* media queries */
+@media screen and (max-width: 820px){
+    body{
+        background: rgb(238,209,137);
+        background: radial-gradient(circle, rgba(238,209,137,1) 0%, rgba(166,165,226,1) 0%, rgba(238,209,137,1) 65%);
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        font-size: 8px;
+        text-transform: uppercase;
+    }
+    #toppage h1{
+        font-family: 'Petit Formal Script', cursive;
+        text-align: center;
+        margin: 20px;
+        font-size: 40px;
+    
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 100px 0;
+        justify-content: space-evenly;
+    }
+    .img{
+        width: 95%;
+        display: flex;
+        justify-content: center;
+    }
+    .text{
+        width: 95%;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px;
+    }
+    .img img{
+        width: 80%;
+        height: auto;
+        padding: 20px;
+    }
+    #projects{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .item{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        width: 90%;
+        border-radius: 20px;
+        border: 2px solid black;
+    
+    }
+    .item img{
+        width: 100%;
+        height: 100%;
+        margin: 0 0 10px 0;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+    <title>Planet X | Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body onscroll="playAudio()">
+
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Images/logo.png" alt="logo" style="width: 8%; height: auto;padding: 4px; cursor: pointer;" >
+            <h2 style="color: white;cursor: pointer;"  onclick="pauseAudio()" >Planet X</h2>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Home page -->
+    <div id="main-page">
+        <h1>The Magical Planet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> Lorem ipsum dolor sit amet. elit. Ab, rem.</p>
+        <!-- <input type="button" value="Explore"> -->
+        <button><a href="#section1" style="text-decoration: none; background-color: royalblue;">Explore</a></button>
+        <div class="earth">
+            <img src="images/earth h2.png" alt="earth half" >
+        </div>
+    </div>
+    <hr style="background-color: transparent; height: 5px; border-color: transparent;">
+
+
+
+
+
+
+    <!-- about earth section  -->
+    <div id="section1">
+        <div class="textarea" >
+            <h1>The Earth</h1>
+            <p style="width: 100%;height: auto; margin: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut laboriosam <br> est nisi exercitationem illo
+                nihil fugit numquam, eaque neque eum <br> repellat delectus inventore placeat adipisci minus possimus
+                <br> corporis at. Qui alias fugit aperiam odit veniam ipsam, odio soluta id magnam?
+            </p>
+            <p style="width: 100%;height: auto; margin: 5%;"> By Author</p>
+        </div>
+        <div class="imgarea" style="width: 50%;height:auto;">
+            <img src="images/earth.png" onclick="visitPageEarth();" alt="Planet Earth" class="planetEarth"  style="width: 90%;height:auto; cursor: pointer;">
+        </div>
+    </div>
+    <hr style="background-color: transparent; height: 5px; border-color: transparent;">
+
+
+
+
+    <!-- about mars section  -->
+    <div id="section1">
+        <div class="textarea" >
+            <h1>The Mars</h1>
+            <p style="width: 100%;height: auto; margin: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut laboriosam <br> est nisi exercitationem illo
+                nihil fugit numquam, eaque neque eum <br> repellat delectus inventore placeat adipisci minus possimus
+                <br> corporis at. Qui alias fugit aperiam odit veniam ipsam, odio soluta id magnam?
+            </p>
+            <p style="width: 100%;height: auto; margin: 5%;"> By Author</p>
+        </div>
+        <div class="imgarea" style="width: 50%;height:auto;">
+            <img src="images/Mars.png" onclick="visitPageMars();" alt="Planet Mars" class="planetMars"  style="width: 90%;height:auto; cursor: pointer;" >
+        </div>
+    </div>
+    <hr style="background-color: transparent; height: 5px; border-color: transparent;">
+
+
+
+
+    <!-- about Moon section  -->
+    <div id="section1">
+        <div class="textarea" >
+            <h1>The Moon</h1>
+            <p style="width: 100%;height: auto; margin: 5%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aut laboriosam <br> est nisi exercitationem illo
+                nihil fugit numquam, eaque neque eum <br> repellat delectus inventore placeat adipisci minus possimus
+                <br> corporis at. Qui alias fugit aperiam odit veniam ipsam, odio soluta id magnam?
+            </p>
+            <p style="width: 100%;height: auto; margin: 5%;"> By Author</p>
+        </div>
+        <div class="imgarea" style="width: 50%;height:auto;">
+            <img src="images/Moon.png" onclick="visitPageMoon();"  alt="Planet Moon" class="planetMoon"  style="width: 95%;height:auto;cursor: pointer;">
+        </div>
+    </div>
+    
+        <audio id="myAudio"  src="Audio/Clouds.mp3" loop  preload="auto"></audio>
+
+
+
+        
+        <script>
+    
+            var music = document.getElementById("myAudio");
+            
+            
+            function playAudio() {
+                music.play();
+                music.volume = 0.2;
+                console.log('You played song');
+            }
+            function pauseAudio() {
+                music.pause();
+                music.volume = 0.0;
+                console.log('You paused song');
+            }
+            </script>
+   
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planet.css">
+    <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Mars</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div id="planet"  onclick="playAudio()">
+            <p>MARS</p>
+            <img src="Img/Mars.png" alt="Mars"
+                style="width: 40%;cursor: pointer; height: auto;position: relative; background-color: transparent;">
+        </div>
+        <div class="p">
+            <p>At Day| <br> 20°C</p>
+            <p>At Night| <br> 73°C</p>
+        </div>
+
+        <div id="cards">
+            <div class="memo">
+                <h4>Weight</h4>
+                <p> 6.39 × 10^23 kg
+                    <br>  <br>
+                    Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being
+                    larger than only Mercury. <br> <br> </p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Age</h4>
+                <p>4.603 billion years  <br> <br>
+                    In English, Mars carries the name of the Roman god of war and is often
+                    referred to as the "Red Planet".</p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Distance</h4>
+                <p> 215.9 million km <br> <br>
+                    From an average distance of 142 million miles (228 million kilometers), Mars is 1.5 astronomical units away from the Sun.</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color:rgb(27, 26, 26);text-align: center;
+padding: 5px; margin: 20px 0 0 0 ;">
+        <footer>
+            <p>Designed by <a href="https://github.com/psantosh16" style="text-decoration: none; color: bisque;">Santosh
+                    ❤️</a></p>
+                    <img id="pauseButton"  onclick="pauseAudio()" src="Img/Pause.svg" alt="Pause Button">
+        
+                </footer>
+    </div>
+
+    <audio src="Aud/Mars Music.m4a" loop id="myAudio2"></audio>
+
+
+
+    <script src="main.js"></script>
+    <script>
+
+        var music = document.getElementById("myAudio2");
+
+
+        function playAudio() {
+            music.play();
+            music.volume = 0.7;
+            console.log('You played song');
+        }
+        function pauseAudio() {
+            music.pause();
+            music.volume = 0.0;
+            console.log('You paused song');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planet.css">
+    <link rel="shortcut icon" href="Img/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Moon</title>
+</head>
+
+<body>
+    <div class="flex">
+        <div id="planet"  onclick="playAudio()">
+            <p>Moon</p>
+            <img src="Img/Moon.png" alt="Moon"
+                style="width: 50%;cursor: pointer; height:auto;position: relative; background-color: transparent;">
+        </div>
+        <div class="p">
+            <p>At Day| <br> 106°C</p>
+            <p>At Night| <br> -183°C</p>
+        </div>
+
+        <div id="cards">
+            <div class="memo">
+                <h4>Weight</h4>
+                <p>The moon's mass is 7.35 x 1022 kg. <br><br> About 1.2% of Earth's mass. Put another way, Earth weighs
+                    81 times
+                    more than the moon. <br><br>The moon's density is 3.34 grams per cubic centimeter (3.34 g/cm3).</p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Age</h4>
+                <p>4.53 billion years <br><br>
+                    The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth, it is the
+                    largest natural satellite in the <br><br> Solar System relative to the size of a major planet, the
+                    fifth
+                    largest satellite in the Solar System overall, and larger than any known dwarf planet. </p>
+                <button>Explore</button>
+            </div>
+            <div class="memo">
+                <h4>Distance</h4>
+                <p>On average, the Earth and Moon are about 150 million kilometres (or 93 million miles) from the Sun! <br> <br>
+                    That distance is so large that it takes light eight minutes to reach us <br> <br> (remember that light travels
+                    at 300,000 kilometres per second).</p>
+                <button>Explore</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-color:rgb(27, 26, 26);text-align: center;
+padding: 5px; margin: 20px 0 0 0 ;">
+        <footer>
+            <p>Designed by <a href="https://github.com/psantosh16" style="text-decoration: none; color: bisque;">Santosh
+                    ❤️</a></p>
+                    <img id="pauseButton"  onclick="pauseAudio()" src="Img/Pause.svg"  alt="Pause Button">
+        
+                </footer>
+    </div>
+
+    <audio src="Aud/Moon Music.m4a" loop id="myAudio3"></audio>
+    <script>
+
+        var music = document.getElementById("myAudio3");
+
+
+        function playAudio() {
+            music.play();
+            music.volume = 0.7;
+            console.log('You played song');
+        }
+        function pauseAudio() {
+            music.pause();
+            music.volume = 0.0;
+            console.log('You paused song');
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
